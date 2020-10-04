@@ -1,7 +1,7 @@
 :root {
-  --primary: #569c62;
-  --secondary: #535353;
-  --dark: #212121;
+  --primary: #22AAA1;
+  --secondary: #136F63;
+  --dark: #041B15;
   --light: #F3F3F3;
 }
 
@@ -14,7 +14,7 @@ body {
   font-family: montserrat, sans-serif;
   width: 100%;
   min-height: 100vh;
-  background-color: #b1b1b1;
+  background-color: var(--dark);
 }
 
 .card {
@@ -46,7 +46,7 @@ body {
   backface-visibility: hidden;
   overflow: hidden;
   border-radius: 16px;
-  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 18px 3px hsla(174, 70%, 59%, 0.4);
 }
 
 .card__face--front {
@@ -97,6 +97,17 @@ body {
   border-radius: 50%;
   background-color: #FFF;
   border: 5px solid #FFF;
+  object-fit: cover;
+}
+
+.fp {
+  display: block;
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 30px;
+  border-radius: 50%;
+  /* background-color: #FFF;
+  border: 5px solid #FFF; */
   object-fit: cover;
 }
 
